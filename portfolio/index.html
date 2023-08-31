@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Add your complete CSS code here */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #333, #111);
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        #home {
+            background-color: #111;
+        }
+
+        /* Update font and text color for the Home section */
+        .home-section {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+
+        .welcome-heading {
+            font-size: 3rem;
+            margin-top: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .profile-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .profile-title {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #aaa;
+            font-weight: normal;
+        }
+
+        .profile-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+            color: #ccc;
+            margin-top: 1rem;
+        }
+
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            margin: 0 auto; /* Center the image container */
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        #about {
+            background-color: #fff;
+        }
+
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2.5rem;
+            margin: 2.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-details p {
+            color: #555;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        #contact {
+            background-color: #f5f5f5;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .contact-icon {
+            font-size: 1.8rem;
+            margin-right: 1rem;
+            color: #333;
+        }
+
+        .highlight {
+            background-color: #ffd700;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .highlight:hover {
+            background-color: #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home-section">
+        <h1 class="welcome-heading">Welcome to My Portfolio</h1>
+        <div class="profile">
+            <div class="profile-image">
+                <img src="images/WhatsApp Image 2023-08-27 at 15.36.58.jpg" alt="nishika pandey">
+            </div>
+            <div class="profile-info">
+                <h2 class="profile-name">Nishika Pandey</h2>
+                <p class="profile-title">Data Scientist · Python Developer · SQL Developer · Machine Learning Specialist</p>
+                <p class="profile-description">"Let's connect and explore ways to collaborate and make a difference in the fascinating world of data science."</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>As a dedicated <span class="highlight">Data Scientist</span>, I am passionate about leveraging the power of data to uncover valuable insights and drive strategic decision-making. With a strong background in <span class="highlight">Machine Learning</span>, <span class="highlight">Statistical Analysis</span>, and <span class="highlight">Programming</span>, I excel at transforming complex data into actionable solutions.</p>
+                <p>Throughout my career, I have successfully developed and deployed <span class="highlight">Predictive Models</span>, optimizing business processes and driving revenue growth. I am skilled in <span class="highlight">Data Preprocessing</span>, <span class="highlight">Feature Engineering</span>, and <span class="highlight">Model Selection</span>, with proficiency in <span class="highlight">Python</span> and <span class="highlight">SQL</span>. I have hands-on experience with libraries and frameworks such as <span class="highlight">TensorFlow</span>, <span class="highlight">scikit-learn</span>, and <span class="highlight">PyTorch</span>, allowing me to efficiently analyze and extract patterns from large datasets.</p>
+                <p>Continuous learning is at the core of my professional growth. I actively seek out new techniques and methodologies through attending <span class="highlight">Conferences</span>, participating in <span class="highlight">Online Courses</span>, and staying up-to-date with industry publications. I believe in the power of a collaborative and innovative environment, where ideas are shared and challenges are tackled together.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Projects</h2>
+    
+        <div class="project">
+            <h3 class="project-title">Conversational AI Integration for Enhanced User Experience</h3>
+            <p class="project-date">Mar. 2022 – Present</p>
+            <div class="project-details">
+                <p>Collaborated with a cross-functional team to develop and implement data-driven solutions.</p>
+                <p>Utilized <span class="highlight">Python</span> and <span class="highlight">SQL</span> to analyze and manipulate large datasets for insights and decision-making.</p>
+                <p>Developed machine learning models for predictive analysis and classification tasks.</p>
+                <p>Leveraged <span class="highlight">NLP techniques</span> to extract meaningful information from unstructured text data.</p>
+                <p>Contributed to the design and development of full-stack applications for data visualization and reporting.</p>
+            </div>
+            <div class="project-responsibilities">
+                <p class="highlight">Key Responsibilities:</p>
+                <ul>
+                    <li>In this project, integrated an intelligent chatbot powered by the <span class="highlight">ChatterBot</span> Python library into the website.</li>
+                    <li>Customized the chatbot interface using <span class="highlight">HTML</span> and <span class="highlight">CSS</span> for a seamless user experience.</li>
+                    <li>Achieved a <span class="highlight">25%</span> improvement in customer satisfaction and a <span class="highlight">40%</span> increase in user engagement and interaction.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="project">
+            <h3 class="project-title">Empowering Movie Review Analysis with NLP</h3>
+            <p class="project-date">...</p>
+            <div class="project-details">
+                <p>Revolutionizes IMDb movie review analysis by uncovering sentiments, patterns, and themes in textual reviews, providing comprehensive insights and enhancing user engagement through a recommendation system, ultimately promoting the discovery of new and exciting films.</p>
+                <!-- Add more details if needed -->
+            </div>
+            <!-- Add any additional information or styling if needed -->
+        </div>
+    
+        <div class="project">
+            <h3>Natural Language Processing for Sentiment Analysis</h3>
+            <p class="project-date">...</p>
+            <p>Leveraged NLP techniques to analyze customer feedback from social media and online reviews. Built a sentiment analysis model to gauge customer sentiment and used the insights to enhance product offerings and customer satisfaction.</p>
+            <p>Designed and developed a robust sentiment analysis model that accurately gauges customer sentiment expressed in textual data.</p>
+            <!-- Add more details if needed -->
+        </div>
+        <!-- Projects showcase -->
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>+91 7805022597</div>
+        </div>
+        <div class="contact-details">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><a href="mailto:nishikapandey2000@gmail.com">nishikapandey2000@gmail.com</a></div>
+        </div>
+        <div class="contact-details">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div><a href="https://www.linkedin.com/in/nishika-pandey-3aa98b266/">LinkedIn</a></div>
+        </div>
+        <div class="contact-details">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div><a href="https://github.com/nishikapandey123">GitHub</a></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; nishika pandey</p>
+    </footer>
+</body>
+</html>

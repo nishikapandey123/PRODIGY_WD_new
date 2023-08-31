@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation styling */
+        .navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .menu li a:hover {
+            color: orange;
+        }
+
+        .content {
+            padding-top: 60px; /* Add space for the fixed navigation */
+        }
+    </style>
+    <title>Interactive Navigation Menu</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">PRODIGY INFOTECH</div>
+        <ul class="menu">
+            <li><a href="#section-01">Comillas Negras</a></li>
+            <li><a href="#section-02">Task-01</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="section-01">
+            <h2>Comillas Negras</h2>
+            <!-- Content of section 01 -->
+        </section>
+        <section id="section-02">
+            <h2>Task-01</h2>
+            <!-- Content of section 02 -->
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
