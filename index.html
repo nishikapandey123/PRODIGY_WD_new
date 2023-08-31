@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Coupon System</title>
+</head>
+<body>
+    <h1>Coupon System</h1>
+    <h2>Available Coupons:</h2>
+    <ul>
+        {% for coupon in coupons %}
+        <li>
+            <strong>Coupon Code:</strong> {{ coupon.code }} <br>
+            <a href="/scratch">Scratch to Reveal Discount</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/create">Create New Coupon</a>
+</body>
+</html>

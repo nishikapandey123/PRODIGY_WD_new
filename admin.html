@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        
+        <h2>Create Coupon</h2>
+        <form method="POST" action="{{ url_for('admin_create_coupon') }}">
+            <label for="code">Coupon Code:</label>
+            <input type="text" id="code" name="code" required><br>
+            <label for="discount">Discount (%):</label>
+            <input type="number" id="discount" name="discount" min="0" required><br>
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required><br>
+            <label for="expire_date">Expire Date:</label>
+            <input type="date" id="expire_date" name="expire_date" required><br>
+            <input type="submit" value="Create Coupon">
+        </form>
+
+        <h2>Generate Coupon</h2>
+        <form method="POST" action="/generate_coupon">
+            <!-- Your form inputs for coupon details -->
+            <input type="number" name="discount" min="0" required placeholder="Discount">
+            <input type="date" name="start_date" required placeholder="Start Date">
+            <input type="date" name="expire_date" required placeholder="Expire Date">
+            <input type="submit" value="Generate Coupon">
+        </form>
+        
+        
+        <h2>All Coupons</h2>
+        <ul>
+            {% for coupon in coupons %}
+                <li>
+                    {{ coupon.code }} - {{ coupon.discount }}% ({{ coupon.start_date }} to {{ coupon.expire_date }})
+                    {% if today >= coupon.start_date and today <= coupon.expire_date %}
+                        - Valid
+                    {% else %}
+                        - Expired
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

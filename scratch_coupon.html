@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Scratch Coupon</title>
+</head>
+<body>
+    <h1>Scratch Your Coupon</h1>
+    <form action="/scratch" method="POST">
+        <label for="code">Enter Coupon Code:</label>
+        <input type="text" id="code" name="code" required>
+        <button type="submit">Scratch</button>
+    </form>
+    <div>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+    <a href="/">Back to Coupons</a>
+</body>
+</html>
